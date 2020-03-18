@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: forma-djr-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 600;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-color: #ffffff;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+article {
+    width: 100%;
+    height: 100%;
+}
+/*.arrow {
+	-webkit-animation: pulsate-bck 1s ease-in-out infinite both;
+	        animation: pulsate-bck 1s ease-in-out infinite both;
+}
+
+.arrowup {
+    -webkit-animation: pulsate-bck 1s ease-in-out infinite both;
+	        animation: pulsate-bck 1s ease-in-out infinite both;
+}*/
+/* nav starts */
+
+
+nav {
+	max-width: 800px;
+	background: lightblue;
+	box-shadow:0 3px 15px rgba(0,0,0,.15);
+    position: fixed;
+    margin-left: 660px;
+    margin-top: 0;
+    opacity: 85%;
+}
+
+nav::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+}
+
+nav ul li a {
+	display: block;
+	color: rgba(255, 255, 255, .9);
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	transition: all .3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	background: rgba(0, 0, 0, .15);
+}
+
+nav ul li a:focus {
+	color: white;
+}
+
+nav ul li a:not(:only-child)::after {
+	padding-left: 4px;
+	content: ' ▾';
+}
+
+nav ul li ul li {
+	min-width: 190px;
+}
+
+nav ul li ul li a {
+	background: transparent;
+	color: #555;
+	border-bottom: 1px solid #DDE0E7;
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+	background: #eee;
+	color: #111;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+}
+
+
+
+
+
+/*
+#punkter {
+    position: fixed;
+    right: 2vw;
+    top: 40%;
+    background-color: rgba(248, 236, 210, 0.9);
+    border: 2px solid;
+    border-color: #55342B;
+    border-radius: 25px;
+}
+
+#punkt1 {
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 100%;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    border-color: #55342B;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#punkt2 {
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 100%;
+    background-color: #55342B;
+    margin-bottom: 5px;
+    border-color: #55342B;
+    margin-left: 5px;
+}
+
+#punkt3 {
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 100%;
+    background-color: #55342B;
+    margin-bottom: 5px;
+    border-color: #55342B;
+    margin-left: 5px;
+}
+
+#punkt4 {
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 100%;
+    background-color: #55342B;
+    margin-bottom: 5px;
+    border-color: #55342B;
+    margin-left: 5px;
+}
+
+#punkt5 {
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 100%;
+    background-color: #55342B;
+    border-color: #55342B;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+} */
+
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    width: 200px;
+}
+
+/*.aktivmenupkt {
+    background-color: white;
+    border: 2px solid;
+    border-color: #55342B;
+}
+
+
+/* nav ends */
+/* Body begins */
+
+
+
+section {
+    margin-bottom: 100px;
+}
+
+.arrow {
+    position: relative;
+    width: 5vw;
+    height: 70px;
+    top: -10vh;
+    left: 47.5vw;
+    opacity: 0.1%;
+}
+
+.arrowup {
+    position: relative;
+    width: 5vw;
+    height: 70px;
+    top: 10vh;
+    left: 47.5vw;
+}
+
+section h1 {
+    font-size: 3em;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+section p {
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+
+#navpil1 {
+    top: -70vh;
+}
+
+
+
+
+#pilside1 {
+    top: -5vh;
+}
+
+#navpilop1 {
+    opacity: 0.1%;
+}
+
+#navpilop2 {
+    opacity: 0.1%;
+}
+
+#navpilop3 {
+    opacity: 0.1%;
+}
+#navpilop4 {
+    opacity: 0.1%;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 90vh;
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+
+
+}
+
+
+/* Page1 starts */
+
+#absolute1 {
+    position: relative;
+    width: 50%;
+    z-index: 1;
+    top: 20vh;
+    margin: 0 auto;
+    margin-left: 40px;
+}
+
+#page1 {
+    margin-top: 0;
+    background: url(../img/forside%20studievejledning.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+
+/* page1 ends */
+/* page2 start */
+section#page2 {
+    background: url(../img/navigationsbillede.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapper2 {
+    margin-top: -320px;
+    width: 100%;
+    align-items: center;
+}
+
+#udforsk {
+    margin-left: 400px;
+}
+
+.button {
+  background-color: lightblue;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#button1 {
+    margin-left: 80px;
+}
+
+#button2 {
+    margin-left: 600px;
+    margin-top: 200px;
+}
+
+#button3 {
+    margin-left: 30px;
+}
+/* pagee ends */
+
+/* page3 start */
+section#page3 {
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#kontakt {
+    color: black;
+    margin-bottom: 10px;
+    margin-top: -200px;
+    font-size: 30px;
+}
+
+#kontaktparagraf {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.container .parallax {
+    width: 100%;
+    padding: 25rem 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.container col-sm-4 col-md-7 col-lg-4 mt-5 {
+    z-index: -1;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left:auto
+}
+
+
+
+
+
+/* page3 ends */
+/* page4 starts */
+
+#absolute4 {
+    background: rgba(248, 236, 210, 0.9);
+    border-style: solid;
+    border-color: #55342b;
+    border-radius: 25px;
+    position: relative;
+    width: 26%;
+    z-index: 1;
+    top: -90vh;
+    margin: 0 auto;
+    text-align: left;
+    left: 40vh;
+}
+#absolute4 p {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+/* page4 ends */
+/* page5 start */
+
+/* page5 ends */
+
+
+a {
+    text-decoration: none;
+}
+
+#rosenhoj {
+    background-color: greenyellow;
+}
+
+.sonderhoj {
+    background-color: aqua;
+}
+
+
+
+
+/* body ends */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-2-25 10:18:20
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation pulsate-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
