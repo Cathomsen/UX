@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: forma-djr-text, sans-serif;
+    font-family: 'Roboto', sans-serif, 'arial';
     font-weight: 400;
     font-style: normal;
     font-weight: 600;
@@ -24,24 +24,16 @@ article {
     width: 100%;
     height: 100%;
 }
-/*.arrow {
-	-webkit-animation: pulsate-bck 1s ease-in-out infinite both;
-	        animation: pulsate-bck 1s ease-in-out infinite both;
-}
 
-.arrowup {
-    -webkit-animation: pulsate-bck 1s ease-in-out infinite both;
-	        animation: pulsate-bck 1s ease-in-out infinite both;
-}*/
 /* nav starts */
 
 
 nav {
-	max-width: 800px;
+	max-width: 850px;
 	background: lightblue;
 	box-shadow:0 3px 15px rgba(0,0,0,.15);
     position: fixed;
-    margin-left: 660px;
+    margin-left: 640px;
     margin-top: 0;
     opacity: 85%;
 }
@@ -113,87 +105,13 @@ nav ul li ul li a:focus {
 
 
 
-
-/*
-#punkter {
-    position: fixed;
-    right: 2vw;
-    top: 40%;
-    background-color: rgba(248, 236, 210, 0.9);
-    border: 2px solid;
-    border-color: #55342B;
-    border-radius: 25px;
-}
-
-#punkt1 {
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-radius: 100%;
-    background-color: #ffffff;
-    margin-bottom: 5px;
-    border-color: #55342B;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#punkt2 {
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-radius: 100%;
-    background-color: #55342B;
-    margin-bottom: 5px;
-    border-color: #55342B;
-    margin-left: 5px;
-}
-
-#punkt3 {
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-radius: 100%;
-    background-color: #55342B;
-    margin-bottom: 5px;
-    border-color: #55342B;
-    margin-left: 5px;
-}
-
-#punkt4 {
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-radius: 100%;
-    background-color: #55342B;
-    margin-bottom: 5px;
-    border-color: #55342B;
-    margin-left: 5px;
-}
-
-#punkt5 {
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-radius: 100%;
-    background-color: #55342B;
-    border-color: #55342B;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-} */
-
 #logo {
     position: fixed;
-    top: 20px;
-    left: 30px;
-    width: 200px;
+    top: 10px;
+    left: 20px;
+    width: 170px;
 }
 
-/*.aktivmenupkt {
-    background-color: white;
-    border: 2px solid;
-    border-color: #55342B;
-}
 
 
 /* nav ends */
@@ -274,6 +192,7 @@ section p {
     height: 90vh;
     width: 100%;
     scroll-snap-align: center;
+    flex-wrap: wrap;
 }
 
 
@@ -318,19 +237,29 @@ section#page2 {
 }
 
 #udforsk {
-    margin-left: 400px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+  
 }
 
 .button {
   background-color: lightblue;
   border-radius: 10px;
   color: white;
-  padding: 15px 32px;
+  padding: 12px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+box-shadow: 1px 1px;
+    
+}
+
+.button:hover {
+background-color: aliceblue;
+    color: gray;
 }
 
 #button1 {
@@ -338,14 +267,14 @@ section#page2 {
 }
 
 #button2 {
-    margin-left: 600px;
-    margin-top: 200px;
+    margin-left: 495px;
+    margin-top: 240px;
 }
 
 #button3 {
-    margin-left: 30px;
+    margin-left: 280px;
 }
-/* pagee ends */
+/* page2 ends */
 
 /* page3 start */
 section#page3 {
@@ -366,6 +295,7 @@ section#page3 {
     color: black;
     margin-bottom: 10px;
     font-size: 20px;
+    font-weight: 300;
 }
 
 .container .parallax {
@@ -384,32 +314,199 @@ section#page3 {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-left:auto
+    margin-left:0;
+    margin-right: 0;
+    width: 20%;
+}
+
+/*form begins */
+
+#formoverskrift {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: #000000;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 550;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    float: right;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #4b8cfb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
 }
 
 
 
 
-
+/* form ends */
 /* page3 ends */
 /* page4 starts */
 
-#absolute4 {
-    background: rgba(248, 236, 210, 0.9);
-    border-style: solid;
-    border-color: #55342b;
-    border-radius: 25px;
-    position: relative;
-    width: 26%;
-    z-index: 1;
-    top: -90vh;
-    margin: 0 auto;
-    text-align: left;
-    left: 40vh;
+section#page4 {
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
-#absolute4 p {
-    margin-top: 10px;
-    margin-right: 10px;
+
+
+.innerflex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.innerflex#raad {
+    width: 100%;
+    order: 1;
+}
+
+
+
+.innerflex#tips {
+    width: 100%;
+    order: 2;
+    display: block;
+    align-self: auto;
+    padding-right: 
+    
+}
+
+#tips {
+    width: 35%;
+    height: 700px;
+    margin-left: 120px;
+    margin-right: 130px;
+    margin-top: 180px;
+}
+
+#raad {
+    width: 40%;
+    margin-top: 400px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ffffff;
+    font-weight: 300;
+    
 }
 
 
@@ -436,44 +533,5 @@ a {
 
 /* body ends */
 
-/* ----------------------------------------------
- * Generated by Animista on 2020-2-25 10:18:20
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
 
-/**
- * ----------------------------------------
- * animation pulsate-bck
- * ----------------------------------------
- */
-@-webkit-keyframes pulsate-bck {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-@keyframes pulsate-bck {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
 

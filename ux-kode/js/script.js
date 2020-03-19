@@ -92,3 +92,51 @@ function showCalendar(month, year) {
 
 //daysInMonth addEventListener("click",)
 
+//calender ends
+
+//instafeed starts
+
+/*new InstagramFeed({
+
+    'username': '',
+
+    'container': "#instagram-feed-demo",
+
+    'display_profile': false,
+
+    'display_biography': false,
+
+    'display_gallery': true,
+
+    'display_igtv': false,
+    
+    'items': 6,
+    
+    'items_per_row': 3,
+    
+    'margin': 0.5,
+    
+    'image_size': 480,
+    
+    'get_raw_json': true,
+    
+    'styling': false
+
+    'callback': function(data) {
+
+      // ...
+        
+
+        
+    }
+
+    
+    
+    
+    
+    
+
+});
+
+*/
+
