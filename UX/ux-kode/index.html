@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UX Studievejledningen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/rbf6yok.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+      
+      
+      <img src="img/Studievejledningen%20-%20Logo%20til%20website%20400x300.png" alt="logo" id="logo">
+       <nav class="nav">
+	<ul>
+		<li><a href="#page1">Forside</a>
+    <li><a href="#page2">Udforsk studievejledningen</a>
+		<li class="drop"><a href="#page3">Kontakt</a>
+			<ul class="dropdown">
+				<li><a href="#">Studievejledningen</a></li>
+				<li><a href="#">Sygemelding</a></li>
+				<li><a href="#">Andet</a></li>
+			</ul>
+		</li>
+		<li><a href="#page4">FAQ</a>
+		<li><a href="#page5">Opslagstavle</a>
+	</ul>
+</nav>
+       
+       
+       
+       
+        
+    </header>
+    <main>
+        <article id="fullpage">
+            <section id="page1" class="pages">
+                <div class="sections">
+                        <div id="absolute1">
+                            <h1 class="forsideh1">Velkommen til studievejledningen</h1><h2 class="forsideh2">på Erhversakademi Aarhus</h2>
+                    
+                    </div>
+                </div>
+                <a href="#page2" id="navpil1"><img src="img/arrow.png" alt="Arrow down" class="arrow" id="pilside1"></a>
+            </section>
+
+            <section id="page2" class="udforsk parallax">
+                <a href="#page1" id="navpilop1"><img src="img/arrow1.png" alt="Arrow up" class="arrowup"></a>
+                <div class="sections">
+                <div id="wrapper2">
+                <h1 id="udforsk">Udforsk studievejledningen</h1>
+                <a href="#page5">
+                <button class="button" id="button1">Opslag</button>
+                </a>
+                <a href="#page4">
+                <button class="button" id="button2">FAQ</button>
+                </a>
+                <a href="#page3">
+                <button class="button" id="button3">Kontakt</button>
+                </a>
+                 </div>               
+                </div>
+                <a href="#page3" id="navpil2"><img src="img/arrow.png" alt="Arrow down" class="arrow"></a>
+            </section>
+
+            <section id="page3" class="kontakt parallax">
+                <a href="#page2" id="navpilop2"><img src="img/arrow1.png" alt="Arrow up" class="arrowup"></a>
+                <div class="sections">
+                    <h1 id="kontakt">Kontakt studievejledningen</h1>
+                    <p id="kontaktparagraf">Du kan nedenfor se hvilke dage at studievejledningen befinder sig på henholdsvis Rosenhøj, markeret med blå og Sønderhøj, markeret med grøn.</p>
+            
+                    <a href="form.html">
+                    <button class="button">Kontakt</button>
+                    </a>
+                    
+                    
+                   <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
+                
+    <div class="card">
+        <h3 class="card-header" id="monthAndYear"></h3>
+        <table class="table table-bordered table-responsive-sm" id="calendar">
+            <thead>
+            <tr>
+                <th>Sun</th>
+                <th class="sonderhoj">Mon</th>
+                <th class="sonderhoj">Tue</th>
+                <th id="rosenhoj">Wed</th>
+                <th class="sonderhoj">Thu</th>
+                <th class="sonderhoj">Fri</th>
+                <th>Sat</th>
+            </tr>
+            </thead>
+
+            <tbody id="calendar-body">
+
+            </tbody>
+        </table>
+
+        <div class="form-inline">
+
+            <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">Previous</button>
+
+            <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next</button>
+        </div>
+        <br/>
+        <form class="form-inline">
+            <label class="lead mr-2 ml-2" for="month">Jump To: </label>
+            <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+                <option value=0>Jan</option>
+                <option value=1>Feb</option>
+                <option value=2>Mar</option>
+                <option value=3>Apr</option>
+                <option value=4>May</option>
+                <option value=5>Jun</option>
+                <option value=6>Jul</option>
+                <option value=7>Aug</option>
+                <option value=8>Sep</option>
+                <option value=9>Oct</option>
+                <option value=10>Nov</option>
+                <option value=11>Dec</option>
+            </select>
+
+
+            <label for="year"></label><select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+            <option value=2019>2019</option>
+            <option value=2020>2020</option>
+            <option value=2021>2021</option>
+            <option value=2022>2022</option>
+            <option value=2023>2023</option>
+            <option value=2024>2024</option>
+            <option value=2025>2025</option>
+            <option value=2026>2026</option>
+            <option value=2027>2027</option>
+            <option value=2028>2028</option>
+            <option value=2029>2029</option>
+            <option value=2030>2030</option>
+        </select></form>
+    </div>
+</div>
+                
+ 
+                </div>
+                <a href="#page4" id="navpil3"><img src="img/arrow.png" alt="Arrow down" class="arrow"></a>
+            </section>
+
+            <section id="page4" class="pages">
+                <a href="#page3" id="navpilop3"><img src="img/arrow1.png" alt="Arrow up" class="arrowup"></a>
+                <div class="sections">
+                   <div class="innerflex">
+                   
+                   <p id="raad">Her hos studievejledningen får vi rigtig mange spørgsmål. Vi har så vidt muligt forsøgt at samle de oftest stillede spørgsmål her, men hvis du har brug for et uddybende svar, eller kunne tænke dig svar på et helt andet spørgsmål, så er du mere end velkommen til at kontakte os. </p>
+                   <img src="img/tipsograad2.png" alt="tips" id="tips">
+                   </div>
+                </div>
+                <a href="#page5" id="navpil4"><img src="img/arrow.png" alt="Arrow down" class="arrow"></a>
+            </section>
+
+           <section id="page5" class="pages">
+                <a href="#page4" id="navpilop4"><img src="img/arrow1.png" alt="Arrow up" class="arrowup"></a>
+                <div class="sections">
+                   
+                </div>
+            </section>
+        </article>
+        <footer class="footer">
+  <div class="footer__addr">
+        
+    <h2>Kontakt</h2>
+    
+    <address>
+      vejledning@eaaa.dk<br>
+          
+      <a class="footer__btn" href="#page3">Kontakt os</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Udforsk</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#page3">Kontakt</a>
+        </li>
+
+        <li>
+          <a href="#page4">FAQ</a>
+        </li>
+            
+        <li>
+          <a href="#page5">Opslagstavle</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Kontakt</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#page3">Studiehjælp/trivsel</a>
+        </li>
+        
+        <li>
+          <a href="#page3">Sygemelding</a>
+        </li>
+        
+        <li>
+          <a href="#page3">Barsel</a>
+        </li>
+        
+        <li>
+          <a href="#page3">Andet</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+    <button id="getPosts" class="btn btn-warning mr-4">Se åbningstider</button>
+    <div id="output"></div>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2020 Studievejledning - Christoffer, Kenneth, Ida, Stinne og Sofie</p>
+    
+  </div>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
+    <!--<button name="jump" onclick="jump()">Go</button>-->
+<script src="scripts.js"></script>
+<script src="js/dist/InstagramFeed.min.js"></script>
+
+<!-- Optional JavaScript for bootstrap -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
